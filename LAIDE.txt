@@ -12,3 +12,5 @@
 ------------------------------------------------------------------------
 
 ---- Ouvrez START_CMD, collez la ligne ci-dessous dans le terminal ----
+
+php artisan make:migration create_actor_serie_table
