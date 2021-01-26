@@ -13,4 +13,19 @@
 
 ---- Ouvrez START_CMD, collez la ligne ci-dessous dans le terminal ----
 
-php artisan make:migration create_actor_serie_table
+
+php artisan make:migration create_{{Name_Table}}_table --seed
+
+php artisan make:migration create_{{Name_Table}}_{{Name_Table}}_table --seed // en ordre alphabetic
+
+
+
+
+
+php artisan make:Model {{Name_Table}} // au singulier
+
+php artisan make:Controller {{Name_Table}}Controller
+
+php artisan tinker
+
+php artisan
