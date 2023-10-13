@@ -1,0 +1,145 @@
+
+.page_map{
+	#navig{
+		flex-direction: column-reverse;
+
+		#btn{
+			display: flex;
+			flex-direction: row;
+
+			.dropdown-menu{
+				z-index: 100000;
+			}
+		}
+
+		form{
+			input {
+				width: 100%;
+	            border: 2px solid #bbb;
+	            text-overflow: ellipsis;
+	        }
+	        .btn{
+	        	font-size: 1.5rem;
+	        	color: black;
+	        }
+		}
+	}
+
+
+	.row{
+		margin-top: 15px;
+		width: 100%;
+		#map{
+			background-color: silver;
+			width: 100%;
+			height: 65vh;
+			.leaflet-popup-content-wrapper{
+				height: 180px;
+				background-color: #fff;
+				//background-image: linear-gradient(315deg, #d2d2d2 0%, #f6f0ea 74%);
+                border: solid 1px #e3342f;
+
+				.adresse{
+					color: grey;
+				}
+                a{
+                    color: #e3342f!important;
+                }
+                a:hover{
+                    color: #ffffff!important;
+                }
+			}
+            .leaflet-popup-tip{
+                background-color: #e3342f;
+            }
+		}
+
+		#liste{
+			display: none;
+		}
+	}
+
+    .MonFlyTo {
+        cursor: pointer;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.page_map{
+		margin-bottom: 25px;
+		#navig{
+			flex-direction: row;
+		}
+		form{
+			width: 50%;
+			input {
+	            flex-grow: 1!important;
+	        }
+		}
+
+		.row{
+			#map{
+				height: 73vh;
+				margin-left: 30px;
+			}
+
+			#liste{
+				display: block;
+				width: 10%;
+                margin: 0px!important;
+				.card-header{
+					font-size: 25px;
+					text-align: center;
+					background-color: transparent;
+				}
+
+				.card-body{
+                    padding: 0px!important;
+					font-size: 20px;
+					.list-group{
+					    max-height: 60vh;
+					    width:100%;
+					    overflow: auto;
+					    -webkit-overflow-scrolling: touch;
+
+					    .list-group-item{
+					    	strong a{
+					    		font-weight: bold;
+					    		color: black;
+					    		font-size: 20px;
+					    		transition-duration: 0.4s;
+					    	}
+					    	strong a:hover{
+					    		text-decoration: none;
+					    		color: tomato;
+					    		transition-duration: 0.4s;
+					    	}
+					    	p{
+					    		font-size: 15px;
+					    		color: grey;
+					    	}
+					    	.btn{
+					    		margin-top: 15px;
+					    		float: right;
+					    	}
+					    }
+					}
+				}
+			}
+		}
+		::-webkit-scrollbar {
+		    width: 12px;
+		}
+
+		::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+		    background: linear-gradient(#f58f86, #d33821);
+		}
+	}
+
+
+
+}

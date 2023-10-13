@@ -1,0 +1,43 @@
+.mentions_div{
+    .titre_cgu {
+        text-align: center;
+        color: crimson;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .cgu{
+        margin: auto;
+        width: 70%;
+        .cgu h3{
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        strong{
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            text-align: justify;
+            width: 95%;
+            margin: auto;
+            line-height: 16px;
+        }
+        .paragraphe{
+            margin-left: 20px;
+        }
+        .i{
+            margin-left: 30px;
+        }
+        li{
+            margin-left: 25px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+div.home {
+    margin-bottom: 65px;
+    .auth{
+        padding-top:1%;
+        padding-bottom:1%;
+        background:linear-gradient(0.25turn, #FF9051, #A051FF);
+        color: white;
+        font-size: 20px;
+    }
+    div.intro {
+        height : 80vh;
+        width : 100%;
+        background-image : url("../img/index-background.jpeg");
+        background-position: center center;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+
+        div {
+            margin-right: auto;
+            margin-left: 5%;
+        }
+        form{
+            width: 75%;
+            input {
+                border: 2px solid #bbb;
+                text-overflow: ellipsis;
+                flex-grow: 1!important;
+            }
+        }
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 23px;
+        }
+
+    }
+    .category_image {
+        width: 90px;
+        height: 90px;
+        background-size: cover;
+        background-position: bottom;
+        transition-duration: 0.4s;
+    }
+    h3{
+        color: black;
+        font-weight: normal;
+    }
+
+    .lien_cat:hover .category_image{
+        transition-duration: 0.4s;
+        border-radius: 20px!important;
+    }
+    .lien_cat:hover{
+        text-decoration: none;
+        .flex-column{
+            h3{
+                color: tomato!important;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+
+    div.filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        div {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+@media (min-width: 992px) {
+    .home{
+        margin-bottom: 75px;
+        .auth{
+            background:linear-gradient(0.25turn, transparent, #FF9051, #A051FF, transparent);
+        }
+        div.intro {
+            h1{
+                font-size: 40px!important;
+            }
+            h2{
+                font-size: 40px!important;
+            }
+        }
+    }
+
+}
+

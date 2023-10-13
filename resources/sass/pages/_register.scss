@@ -1,0 +1,51 @@
+#register{
+	min-height: 110vh;
+	background-color: #ffe190;
+	background-image: linear-gradient(316deg, #ffe190 0%, #fa9e8c 74%);
+
+	padding-top: 2px;
+	.register{
+		border: none;
+		margin-top: 2px!important;
+		.row{
+
+			.card{
+				border-radius: 33px;
+				.card-header{
+					border-radius: 33px 33px 0 0;
+					font-size: 18px;
+					border: none;
+					background-color: white;
+					padding-bottom: 0;
+				}
+				.card-body{
+					padding-top: 0;
+				}
+			}
+		}
+	}
+}
+
+body.register div#app.pb-5, body.login div#app.pb-5 {
+    padding-bottom: 0 !important;
+}
+
+@media (min-width: 992px) {
+	#register{
+		min-height: 82.5vh;
+
+		padding-top: 50px;
+		.register{
+			margin-top: 20px!important;
+			.row{
+				.card{
+					.card-header{
+						font-size: 25px;
+						padding-bottom: 30px;
+					}
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.container a:first-child{
+	display: flex;
+	flex-direction: row;
+
+	.brand{
+		margin: 15px;
+	}
+}
+.navbar-brand{
+    margin-left: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    .brand {
+        margin-left: 15px;
+    }
+}
+
+//.container{
+
+    .navbar-nav {
+        .nav-link{
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            align-items: center;
+            justify-content: flex-end;
+            img {
+                margin-left: 0;
+            }
+            div {
+                margin: 10px;
+            }
+        }
+    }
+.nav-item{
+        display: flex;
+	}
+//}

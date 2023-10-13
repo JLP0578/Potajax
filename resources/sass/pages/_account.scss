@@ -1,0 +1,98 @@
+.home{
+	.account{
+		width: 100%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		b{
+			color: #E92414;
+		}
+
+		.rounded-circle{
+			width: 160px;
+			height: 160px;
+			background-image: url('../img/Fichier_8.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: white;
+			border: 2px #E92414 solid;
+			margin: auto;
+			box-shadow: 0 8px 16px 0 rgba(255,0,0, 0.4), 0 12px 40px 0 rgba(255,0,0, 0.4);
+		}
+		.btn-outline-warning{
+			font-size: 18px;
+			margin-top: 2%;
+			border-color: #F07800;
+			color: #F07800;
+			font-weight:bold;
+		}
+
+		.btn-outline-warning:hover{
+			background-color: #EF9C0B;
+			color: white;
+		}
+		.btn-outline-danger{
+			margin-top: 1%;
+		}
+
+		.btn-outline-primary{
+			font-size: 15px;
+			margin-top: 1%;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+}
+a.stats:hover {
+    color: white !important;
+}
+.row-shop{
+	text-align: center;
+	.col{
+		.btn{
+			margin-top: 15px;
+		}
+	}
+}
+.list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.shop{
+		margin: auto;
+		margin-bottom: 25px;
+		border-radius: 120px 120px 0 0;
+		text-align: center;
+		.card-body{
+			.card-title{
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+			a{
+				color: white;
+				margin-top: 15px;
+			}
+			a:hover{
+				color: white;
+			}
+		}
+	}
+}
+
+
+.col{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.btn_admin{
+	width: 100%;
+	text-align: center;
+}
+
+
+
